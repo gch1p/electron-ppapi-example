@@ -17,8 +17,6 @@ var plugin = lib + ';application/x-hello'
 console.log(plugin)
 
 app.commandLine.appendSwitch('register-pepper-plugins', plugin)
-app.commandLine.appendSwitch('vmodule', '=ppb*=4')
-app.commandLine.appendSwitch('enable-logging', 'stderr')
 
 app.on('ready', function() {
   mainWindow = new BrowserWindow({
