@@ -79,8 +79,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\evgeny\VKMessenger\ppapi\nacl_sdk\pepper_49\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\evgeny\VKMessenger\ppapi\nacl_sdk\pepper_49\lib\win_x86_32_host\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\..\nacl_sdk\pepper_49\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\..\nacl_sdk\pepper_49\lib\win_x86_32_host\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
