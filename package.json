@@ -1,0 +1,8 @@
+{
+  "main": "main.js",
+  "name": "electron",
+  "description": "testing third party plugin load",
+  "version": "0.0.1",
+  "license": "MIT"
+}
+
