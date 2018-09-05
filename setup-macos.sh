@@ -13,7 +13,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd $DIR
 
-wget https://github.com/electron/electron/releases/download/v1.8.8/electron-v1.8.8-win32-x64.zip || exit
+wget https://github.com/electron/electron/releases/download/v1.8.8/electron-v1.8.8-darwin-x64.zip || exit
 wget https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/nacl_sdk.zip || exit
 
 unzip nacl_sdk.zip
