@@ -21,7 +21,7 @@
 
 ### Windows
 - Нужен git, bash (я ставил отсюда https://git-scm.com/download/win и там сразу и то и другое), curl, Visual Studio.
-- `./setup-win.sh`
+- `./setup-win.sh` (или руками сделать то что в скрипте)
 - Открыть solution в VS, убедиться что стоит Release и x86 и запустить сборку. 
   - Если ругается на несовпадение версий, пересобрать либу тем же компилятором, для этого открыть "Developer Command Prompt" вашей версии VS, зайти в nacl_sdk/pepper_49/src и сделать `make TOOLCHAIN=win PROJECTS="ppapi ppapi_cpp ppapi_gles2 pthreads"`. 
     - Если завершается без сборки, надо руками удалить объектники из nacl_sdk/pepper_49/src/{$project}/win. Если либа не создается в nacl_sdk/pepper_49/lib/win_x86_32_host или создается в другом месте, проверить, что переменная `NACL_SDK_ROOT` указывает на правильную папку (nacl_sdk/pepper_49).
