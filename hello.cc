@@ -21,6 +21,8 @@
 #include <assert.h>
 #include <stdint.h>
 
+#include <fstream>
+#include <iostream>
 #include <stdio.h>
 
 namespace {
@@ -54,7 +56,16 @@ DemoInstance::DemoInstance(PP_Instance instance)
         : pp::Instance(instance),
             pp::Graphics3DClient(this),
             callback_factory_(this),
-            context_(NULL) {}
+            context_(NULL) {
+
+    // test file opening
+    std::cout << "file reading test...\n";
+
+    std::ifstream infile("/Users/evgeny/test.txt");
+    for (std::string line; getline(infile, line); ) {
+        std::cout << line << std::endl;
+    }
+}
 
 DemoInstance::~DemoInstance() {
     assert(glTerminatePPAPI());
